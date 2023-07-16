@@ -62,6 +62,26 @@ nav li a{
     width: 100%;
     margin-top: 15px;
 }
+/* main section design */
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.tems-container{
+    display: flex;
+    align-items: center;
+}
+.teams-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    
+}
+.teams-content{
+    padding: 70px;
+}
+
+
 /* Responsive design */
 @media screen and (max-width:576px) {
     header{
