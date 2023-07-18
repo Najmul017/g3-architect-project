@@ -4,6 +4,7 @@
     font-family: 'Lato', sans-serif;
 font-family: 'Open Sans', sans-serif;
 font-family: 'Work Sans', sans-serif;
+box-sizing: border-box;
 }
 .btn-primary{
     border-radius: 8px;
@@ -110,8 +111,92 @@ main {
 .facts{
     padding-left: 25px;
 }
+/* Features Section */
+.Features{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 25PX;
+}
+.feature-image img{
+   width: 100%;
+   height: 800px;
+   margin-left: 30px;
+    padding: 30px 30PX 30px 50px;
+    
+}
+.card-content .card{
+    margin-bottom: 3px;
+    padding: 5px 20px;
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.card-content >h4{
+    color: #131313;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
 
+}
+.feature-container > .nav-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 15px;
+}
+.ten-year-badge{
+    border-radius: 8px;
+background: #FF900E;
+color: #FFF;
+padding: 15px 30px;
+width: 220px;
+height: 140px;
+text-align: center;
+position: relative;
+bottom: 100px;
+left: 10px;
+}
+.ten-year-badge h2{
+    font-size: 2rem;
+    margin: 0;
+}
+.ten-year-badge p{
+    font-size: 2rem;
+}
 
+/* facts Section */
+.facts-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.facts-card-container  .card{
+    border-radius: 5px;
+    border: 1px solid tomato;
+    text-align: center;
+    padding: 30px;
+}
+.facts-card-container .card-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    
+}
+.facts-card-container .card-stats {
+    font-size: 2.8rem;
+    color: #424242;
+
+}
+/* Sponsor responsive design */
+.sponsor-head-title h3, .sponsor-head-title p {
+text-align: center;
+}
+.sponsor-image{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    
+}
+.sponsor-image > img{
+    height: 45px;
+    width: 130px;
+}
 
 /* Responsive design */
 @media screen and (max-width:576px) {
@@ -123,6 +208,21 @@ flex-direction: column;
     }
     .teams-img-container{
         grid-template-columns:repeat(1, 1fr);
+    }
+    .facts-card-container{
+display: grid;
+grid-template-columns: repeat(1,1fr);
+gap: 2px;
+    }
+    .Features{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .sponsor-image{
+        flex-wrap: wrap;
+    }
+    .feature-image{
+        height: 400px;
+        
     }
 }
 /* Tablet or medium device */
